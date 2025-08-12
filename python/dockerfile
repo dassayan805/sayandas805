@@ -1,0 +1,18 @@
+FROM python:3.8.16-slim-bullseye
+RUN apt-get update && apt-get install build-essential -y
+
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the requirements files
+COPY requirements.txt .
+
+# Install the dependencies
+RUN pip install --default-timeout=300 --retries=5 -r requirements.txt
+
+# Copy the entire project directory
+COPY . .
+
+# Set the entry point command with default arguments
+CMD ["python3", "src/json_gen.py"]
