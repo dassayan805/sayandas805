@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: social-media-pipeline
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: social-media-pipeline
+  template:
+    metadata:
+      labels:
+        app: social-media-pipeline
+    spec:
+      containers:
+        - name: social-media-pipeline
+          image: sb-docker/social-media-pipeline:v25.1
+          imagePullPolicy: Always
+          command: ["python3", "src/json_gen.py"]
+          volumeMounts:
+            - name: config-volume
+              mountPath: /app/config
+      volumes:
+        - name: config-volume
+          configMap:
+            name: social-media-config
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: social-media-service
+spec:
+  selector:
+    app: social-media-pipeline
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
+  type: ClusterIP
