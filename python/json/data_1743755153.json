@@ -1,0 +1,92 @@
+[
+    {
+        "postId": 1,
+        "title": "Clean the kitchen",
+        "user": {
+            "userId": 1,
+            "name": "Harry Potter",
+            "city": "London"
+        }
+    },
+    {
+        "postId": 2,
+        "title": "Complete the report",
+        "user": {
+            "userId": 2,
+            "name": "Hermione Granger",
+            "city": "Oxford"
+        }
+    },
+    {
+        "postId": 3,
+        "title": "Plan the trip",
+        "user": {
+            "userId": 3,
+            "name": "Ron Weasley",
+            "city": "Manchester"
+        }
+    },
+    {
+        "postId": 4,
+        "title": "Organize the bookshelf",
+        "user": {
+            "userId": 4,
+            "name": "Albus Dumbledore",
+            "city": "Edinburgh"
+        }
+    },
+    {
+        "postId": 5,
+        "title": "Prepare presentation slides",
+        "user": {
+            "userId": 5,
+            "name": "Severus Snape",
+            "city": "Bristol"
+        }
+    },
+    {
+        "postId": 6,
+        "title": "Schedule a meeting",
+        "user": {
+            "userId": 6,
+            "name": "Minerva McGonagall",
+            "city": "Glasgow"
+        }
+    },
+    {
+        "postId": 7,
+        "title": "Review project proposal",
+        "user": {
+            "userId": 1,
+            "name": "Harry Potter",
+            "city": "London"
+        }
+    },
+    {
+        "postId": 8,
+        "title": "Update website content",
+        "user": {
+            "userId": 2,
+            "name": "Hermione Granger",
+            "city": "Oxford"
+        }
+    },
+    {
+        "postId": 9,
+        "title": "Organize team building event",
+        "user": {
+            "userId": 3,
+            "name": "Ron Weasley",
+            "city": "Manchester"
+        }
+    },
+    {
+        "postId": 10,
+        "title": "Conduct code review",
+        "user": {
+            "userId": 5,
+            "name": "Severus Snape",
+            "city": "Bristol"
+        }
+    }
+]
