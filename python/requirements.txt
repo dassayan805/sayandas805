@@ -1,0 +1,7 @@
+requests==2.26.0
+pandas
+schedule==1.1.0
+snowflake-connector-python==3.0.3
+streamlit
+pyarrow<10.1.0,>=10.0.1
+plotly
